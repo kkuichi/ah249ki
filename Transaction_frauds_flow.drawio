@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="22rY1TvncVqtYEam0qPY">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--3" edge="1" parent="1" source="eVlYs3e1a5t7gsWfW6v--1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eVlYs3e1a5t7gsWfW6v--2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Načítanie transakcií&lt;div&gt;(Fraud.csv / Paysim)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--5" edge="1" parent="1" source="eVlYs3e1a5t7gsWfW6v--2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eVlYs3e1a5t7gsWfW6v--4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Čistenie dát&lt;div&gt;+ kontrola typov&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="EDA a analýza nerovnováhy" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--9" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="eVlYs3e1a5t7gsWfW6v--10" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="340" />
+              <mxPoint x="610" y="370" />
+              <mxPoint x="110" y="370" />
+              <mxPoint x="110" y="410" />
+            </Array>
+            <mxPoint x="610" y="350" as="sourcePoint" />
+            <mxPoint x="130" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--13" edge="1" parent="1" source="eVlYs3e1a5t7gsWfW6v--10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eVlYs3e1a5t7gsWfW6v--12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Feature engineering&lt;div&gt;(balance errors, zero flags, isMerchantDest)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--15" edge="1" parent="1" source="eVlYs3e1a5t7gsWfW6v--12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eVlYs3e1a5t7gsWfW6v--14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Train / val / test split podľa step" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Tréning modelov&lt;div&gt;DT, RF, XGB, LGBM&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--16" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="440" />
+              <mxPoint x="610" y="470" />
+              <mxPoint x="110" y="470" />
+              <mxPoint x="110" y="510" />
+            </Array>
+            <mxPoint x="610" y="450" as="sourcePoint" />
+            <mxPoint x="150" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--19" edge="1" parent="1" source="eVlYs3e1a5t7gsWfW6v--17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eVlYs3e1a5t7gsWfW6v--18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Doplnkové experimenty 3 features, SMOTE vs. class_weight" vertex="1">
+          <mxGeometry height="60" width="120" x="150" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--21" edge="1" parent="1" source="eVlYs3e1a5t7gsWfW6v--18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="eVlYs3e1a5t7gsWfW6v--20" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Hybridný model&lt;div&gt;AE --&amp;gt; LGBM&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="eVlYs3e1a5t7gsWfW6v--20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="AUPRC, ROC-AUC, SHAP, interpretácia výsledkov" vertex="1">
+          <mxGeometry height="60" width="120" x="550" y="480" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

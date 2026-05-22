@@ -84,6 +84,19 @@ Keďže ide o silne nevyváženú klasifikačnú úlohu, hlavnou metrikou je **A
 
 Rozhodovací prah sa odporúča ladiť na validačnej množine, nie priamo na testovacej množine.
 
+## Grafy
+
+Do upravenej verzie notebooku boli doplnené všetky grafy:
+
+1. graf nerovnováhy tried,
+2. porovnanie AUPRC a ROC-AUC pri plnom feature sete,
+3. Precision/Recall/F1 pri plnom feature sete,
+4. porovnanie SMOTENC a class_weight,
+5. trade-off medzi recallom a počtom false positives,
+6. porovnanie full-feature modelov s hybridom AE->LGBM.
+
+SHAP grafy neboli do tejto verzie notebooku vložené.
+
 ## Spustenie v Google Colab
 
 1. Nahraj dataset `Fraud.csv` do Google Drive.
